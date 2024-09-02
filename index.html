@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      div {
+        align-items: center;
+        width: 400px;
+        height: 550px;
+        border: 2px solid gray;
+        text-align: center;
+        background-color: rgba(172, 168, 160, 0.336);
+      }
+      input {
+        border-radius: 5%;
+        height: 20px;
+        text-align: center;
+      }
+      .button {
+        background-color: rgb(41, 119, 41);
+        width: 70px;
+        outline: none;
+        height: 35px;
+        font-size: medium;
+        color: white;
+      }
+      p{
+        padding-top: -1%;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Form</title>
+  </head>
+  <body>
+    <div>
+      <h1>Create a new account</h1>
+      <p>it's quick and easy</p>
+      <form action="/action.php">
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last name" required />
+        <br />
+
+        <br />
+        <input type="number" placeholder="Your Phone number" required />
+
+        <input
+          type="email"
+          placeholder="Type Your email address here"
+          required
+        />
+        <br />
+        <br />
+        <h4 title="Give more information about you">Date oF birth</h4>
+        <select name="Date">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+        <select name="Month">
+          <option value="Jan">Jan</option>
+          <option value="Feb">Feb</option>
+          <option value="Mar">Mar</option>
+          <option value="Apr">Apr</option>
+          <option value="May">May</option>
+          <option value="Jun">Jun</option>
+          <option value="Jul">Jul</option>
+          <option value="Aug">Aug</option>
+          <option value="Sep">Sep</option>
+          <option value="Oct">Oct</option>
+          <option value="Nov">Nov</option>
+          <option value="Dec">Dec</option>
+        </select>
+        <select name="Year">
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+        </select>
+        <br />
+        <h4>Gender:</h4>
+        <br />
+
+        <label for="Male">
+          Male
+          <input type="radio" name="gender" id="Male" />
+        </label>
+
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" />
+        <label for="Other">Other</label>
+        <input type="radio" name="gender" id="Other" />
+        <br />
+        <br />
+        <input type="password" placeholder="New password" required />
+        <input type="password" placeholder="Confirm your password" required />
+        <br />
+        <br />
+        <input type="submit" value=" sign up" class="button" />
+        <input type="reset" value=" Reset" class="button" />
+      </form>
+ <h3> <a href="#">Already have an account!</a></h3>
+    </div>
+  </body>
+</html>
